@@ -1,0 +1,154 @@
+:root {
+    --main-color: #f62d00;
+}
+
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: 'KoHo', sans-serif;
+}
+
+main h1 {
+    margin-top: 3rem;
+}
+
+main h2, main p {
+    padding: 1.5rem;
+    font-weight: normal;
+    padding: 0.5rem;
+}
+
+.container__header {
+    width: 100%;
+    height: 15vh;
+    background-color: var(--main-color);
+}
+
+    .div__header {
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+        .div__header a {
+            margin-right: 1rem;
+            color: black;
+            font-weight: 500;
+        }
+
+    .header__figure {
+        width: 50%;
+    }    
+    .header__figure img {
+        max-width: 30%;
+        min-width: 20%;
+        padding: 1rem;
+    }
+
+
+.main__figure img {
+    max-width: 70%;
+    margin-top: 1rem;
+}
+
+.main__figure2 img {
+    max-width: 35%;
+    margin: 1rem 0;
+}
+
+#duvida {
+    margin: 1rem 0rem;
+    padding: 0.5rem;
+    background-color: var(--main-color);
+    border: none;
+    outline: none;
+}
+
+    #duvida::placeholder {
+        color: black;
+        padding: 0.5rem;
+        font-family: 'KoHo', sans-serif;
+
+    }
+
+.bota {
+    border: none;
+    outline: none;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+    background-color: white;
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-family: 'KoHo', sans-serif;
+    cursor: pointer; 
+}
+
+    .bota a {
+        color: var(--main-color);
+        display: inline-block;     
+        position: relative;    
+        z-index: 1;     
+        padding: 2em;     
+        margin: -2em; 
+    }
+
+.footer {
+    margin-top: 1rem;
+}
+    .footer p {
+        font-size: 0.75rem;
+    }
+        .footer p a {
+            color: white;
+        }
+
+.futuro {
+    font-size: 2rem;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .container__principal {
+        display: flex;
+        margin: 1.5rem;
+    }
+
+    .container__principal h2 {
+        margin: auto;
+    }
+
+    .main__figure {
+        width: 110rem;
+    }
+
+    .main__figure2 {
+        width: 50%;
+        text-align: center;
+    }
+
+    .container__secundario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container__secundario p {
+        margin: 0 12rem;
+    }
+
+    #duvida {
+        width: 50%;
+        padding: 1rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .header__figure {
+        width: 30%;
+    }
+        .header__figure img {
+            max-width: 35%;
+        }
+}

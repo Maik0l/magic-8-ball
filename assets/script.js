@@ -27,7 +27,7 @@ function frase() {
         case 13:
             return "Muito difícil de acontecer."
         case 14:
-            return "Minhas fontes dizem que não"
+            return "Minhas fontes dizem que não."
     }
 }
 

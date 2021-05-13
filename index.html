@@ -6,21 +6,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Magic 8 Ball</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/reset.css">
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <html>
+
 <body>
+    <div class="container__header">
+        <header class="div__header">
+            <figure class="header__figure">
+                <img src="img/looney-mouth-1.png" alt="Boca com dentes">
+                <figcaption>Um dente com bocas</figcaption>
+            </figure>
+            <a href="https://en.wikipedia.org/wiki/Magic_8-Ball" target="_blank">O que é Magic 8 Ball?</a>
+        </header>
+    </div>
     <main id="main">
-    <h1>Bem vindo, caro viajante!</h1>
-    <h2>Eu sou um ser mágico adptado para a era da tecnologia. Posso ver seu futuro baseado em todas as suas opções de
-        escolha. Mas lembre-se! O que te aguarda no futuro nem sempre é benéfico...</h2>
-    <p>Venha, chegue mais perto. Faça-me uma pergunte de <strong>SIM</strong> ou <strong>NÃO</strong> e aguarde a sua resposta.</p>
-    <label for="duvida" >Questione-me!</label>
-    <p><input type="text" id="duvida" name="duvida" placeholder="Não tenha medo..."></p>
-    <button id="btn">Enviar</button>
-    <button id="resetar">Resetar</button>
-    <div id="divMae"></div>
+        <h1>Bem vindo, caro viajante!</h1>
+    <div class="container__principal">
+        <figure class="main__figure">
+            <img src="img/looney-14.png" alt="Um jovem mágico">
+            <figcaption>Um jovem usando poderes mágicos</figcaption>
+        </figure>
+        <h2>Eu sou um ser mágico adptado para a era da tecnologia. Posso ver seu futuro baseado em todas as suas opções
+            de
+            escolha. Mas lembre-se! O que te aguarda no futuro nem sempre é benéfico...</h2>
+    </div>
+    <div class="container__secundario">
+        <figure class="main__figure2">
+            <img src="img/looney-bag-2.png" alt="Uma carta">
+            <figcaption>Desenho de uma carta vermelha</figcaption>
+        </figure>
+        <p>Venha, chegue mais perto. Faça-me uma pergunte de <strong>SIM</strong> ou <strong>NÃO</strong> e aguarde a
+            sua resposta.</p>
+    </div>
+        <label for="duvida">Questione-me!</label>
+        <div><input type="text" id="duvida" name="duvida" placeholder="Não tenha medo..." required=></div>
+        <button class="bota" id="btn" name="duvida"><a href="#divMae">Enviar</a></button>
+        <button class="bota" id="resetar">Resetar</button>
+        <div id="divMae"></div>
     </main>
+    <footer class="footer">
+        <div>
+            <p>Desenvolvido por Maikol Moraes | Todos os direitos reservados © 2021 | Illustration by <a
+                    href="https://icons8.com/illustrations/author/5eb423ee01d03600140dff88">Tatiana Vinogradova</a> and <a href="https://icons8.com/illustrations/author/5c07e68d82bcbc0092519bb6">Icons 8</a> from
+                <a href="https://icons8.com/illustrations">Ouch!</a></p>
+        </div>
+    </footer>
     <script src="assets/script.js"></script>
 </body>
+
 </html>
